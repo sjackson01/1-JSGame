@@ -18,7 +18,7 @@ function addItems() {
   createItem(150, 100, 'coin');
   createItem(250, 200, 'coin');
   createItem(350, 300, 'coin');
-  createItem(450, 400, 'coin');
+  createItem(450, 400, 'poison');
   
 }
 
@@ -78,6 +78,9 @@ window.onload = function () {
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
     game.load.spritesheet('coin', 'coin.png', 36, 44);
     game.load.spritesheet('badge', 'badge.png', 42, 54);
+    
+    //Add  new sprite name of file, height, width(divide width by frames) 
+    game.load.spritesheet('poison', 'poison.png', 32, 32);
   }
 
   // initial game set up
