@@ -26,7 +26,7 @@ function addItems() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
   platforms.create(150, 150, 'platform');
-  platforms.create(250, 250, 'platform');
+  platforms.create(250, 250, 'platform2');
   platforms.create(350, 350, 'platform');
   platforms.create(450, 450, 'platform');
   platforms.setAll('body.immovable', true);
@@ -72,6 +72,7 @@ window.onload = function () {
     
     //Load images
     game.load.image('platform', 'platform_1.png');
+    game.load.image('platform2', 'platform_2.png');
     
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
